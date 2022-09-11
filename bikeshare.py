@@ -130,13 +130,13 @@ def time_stats(df):
 
     # display the most common day of week
     MostDayoWeek = df['month'].mode().unique()
-    MostDayoWeekLet = valid_days[MostDayoWeek[0]]
-    print("The most common dayofweek in month {} is: {} - {} \n".format(MostMonthLet, MostDayoWeek, MostDayoWeekLet))
+    MostDoWLet = valid_days[MostDayoWeek[0]]
+    print("The most common dayofweek in month {} is: {} - {} \n".format(MostMonthLet, MostDayoWeek, MostDoWLet))
 
     # display the most common start hour
     df['start_hours'] = df['Start Time'].dt.hour
     most_com_str_hour = df['start_hours'].mode().unique()
-    print("The most common start hour in {} at {}: {} \n".format(MostMonthLet, MostDayoWeekLet, most_com_str_hour))
+    print("The most common start hour in {} at {}: {} \n".format(MostMonthLet, MostDoWLet, most_com_str_hour))
 
     print("\n This took %s seconds." % (time.time() - start_time))
     print('==<+>=='*15)
