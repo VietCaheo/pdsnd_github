@@ -6,3 +6,5 @@ User can query various option such as:
 - Also, some statistic information can be showed.
 - ...
 
+Referrence:
+ [1] https://pandas.pydata.org/docs/reference/
