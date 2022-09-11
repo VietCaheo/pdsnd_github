@@ -8,3 +8,5 @@ User can query various option such as:
 
 Referrence:
  [1] https://pandas.pydata.org/docs/reference/
+ [2] google.com
+ [3] review again lecture in class also
